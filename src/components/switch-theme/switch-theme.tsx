@@ -14,18 +14,20 @@ export const SwitchTheme = () => {
     const isDark = resolvedTheme === 'dark'
 
     return (
-        <button
-            aria-label="Alterar Tema"
-            onClick={() => setTheme(isDark ? 'light' : 'dark')}
-            className="inline-flex h-6 w-16 items-center rounded-full border border-stroke bg-surface hover:text-hover"
-        >
-            <span
-                className={`flex justify-center items-center h-8 w-8 rounded-full bg-bg transition-transform ${isDark ? 'translate-x-8' : 'translate-x-0'}`}
+        <div className="flex justify-center">
+            <button
+                aria-label="Alterar Tema"
+                onClick={() => setTheme(isDark ? 'light' : 'dark')}
+                className="inline-flex h-6 w-16 items-center rounded-full border border-stroke bg-surface hover:text-hover"
             >
-                {isDark
-                    ? <MoonIcon className="text-black h-4 w-4"/>
-                    : <SunIcon className="text-white h-4 w-4"/>}
-            </span>
-        </button>
+                <span
+                    className={`flex justify-center items-center h-8 w-8 rounded-full bg-bg transition-transform ${isDark ? 'translate-x-8' : 'translate-x-0'}`}
+                >
+                    {isDark
+                        ? <MoonIcon className="text-black h-4 w-4" />
+                        : <SunIcon className="text-white h-4 w-4" />}
+                </span>
+            </button>
+        </div>
     )
 }

@@ -10,7 +10,7 @@ export const ButtonLink = ({ label, url }: LinkItem) => {
     return (
         <button
             onClick={handleClick}
-            className="w-40 h-14 rounded-md bg-surface hover:bg-surface-hover border border-stroke"
+            className="w-full h-14 rounded-md bg-surface hover:bg-surface-hover border border-stroke"
         >
             {label}
         </button>

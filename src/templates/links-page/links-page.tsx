@@ -28,36 +28,16 @@ export const LinksPage = async () => {
 
 
     return (
-        <div className="flex flex-col justify-center items-center ">
-            <div>
+        <div className="flex min-h-screen flex-col items-center justify-center">
 
-                {/* foto e nome */}
-                <div className="flex flex-col items-center justify-center">
-                    <Avatar />
-                    <h2 className="text-md text-text">@Igor Torres</h2>
-                </div>
-
-                {/* botao de dark mode */}
-                <div>
-                    <SwitchTheme />
-                </div>
-
+            <div className="flex flex-col items-center gap-2 p-6">
+                <Avatar />
+                <h2 className="text-md text-text">@Igor Torres</h2>
             </div>
 
-
-            {/* links */}
-            <div>
-                <LinksList links={links} />
-            </div>
-
-            {/* redes socias icones */}
-            <div>
-                <SocialList
-                    socials={socials}
-                />
-            </div>
-
-            {/* rodape com texto */}
+            <SwitchTheme />
+            <LinksList links={links} />
+            <SocialList socials={socials} />
             <Footer label={"Feito por Igor Torres"} />
 
         </div>

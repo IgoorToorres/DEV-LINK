@@ -14,7 +14,7 @@ const ICONS: Record<string, React.ReactNode> = {
 
 export const SocialList = ({socials}: SocialListProps) => {
     return (
-        <div>
+        <div className="flex p-6 gap-8">
             {socials.map((social) => (
                 <ButtonSocialLink 
                     key={social.plataform}

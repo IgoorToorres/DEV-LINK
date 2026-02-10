@@ -2,6 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background-color: rgb(var(--color-bg));
+  color: rgb(var(--color-text));
+  background-image: url("/bg-mobile-light.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-color 900ms ease, color 900ms ease;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("/bg-desktop-light.png");
+  }
+}
+
+
+.dark body {
+  background-image: url("/bg-mobile.png");
+}
+
+@media (min-width: 768px) {
+  .dark body {
+    background-image: url("/bg-desktop.png");
+  }
+}
+
+
 :root {
   /* LIGHT */
   --color-bg: 0 0 0;              /* #000000 */

@@ -4,7 +4,7 @@ type FooterProps = {
 
 export const Footer = ({label}: FooterProps) => {
     return (
-        <footer>
+        <footer className="p-6">
             <span className="text-blue-700">{label}</span>
         </footer>
     )
