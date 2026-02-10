@@ -1,4 +1,5 @@
 import { Avatar } from "@/components/avatar";
+import { SwitchTheme } from "@/components/switch-theme";
 
 export default function Home() {
   return (
@@ -6,13 +7,14 @@ export default function Home() {
       <div>
 
         {/* foto e nome */}
-        <div>
+        <div className="flex flex-col items-center justify-center">
           <Avatar />
+          <h2 className="text-md text-text">@Igor Torres</h2>
         </div>
 
         {/* botao de dark mode */}
         <div>
-
+          <SwitchTheme />
         </div>
 
       </div>

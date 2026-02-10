@@ -19,6 +19,13 @@ export default {
         },
         highlight: 'rgb(var(--color-highlight) / <alpha-value>)',
       },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
+      fontSize: {
+        'text-md': ['16px', { lineHeight: '24px', fontWeight: '500' }],
+        'text-sm': ['14px', { lineHeight: '24px', fontWeight: '400' }],
+      }
     }
   },
   plugins: [],

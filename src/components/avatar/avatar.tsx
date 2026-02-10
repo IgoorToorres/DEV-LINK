@@ -3,11 +3,14 @@ import Image from "next/image";
 
 export const Avatar = () => {
     return (
-        <Image
-            src={"/foto-igor.jpeg"}
-            alt="foto-avatar-igor"
-            width={112}
-            height={111}
-        />
+        <div className="inline-flex rounded-full border border-stroke">
+            <Image
+                src={"/foto-igor.jpeg"}
+                alt="foto-avatar-igor"
+                width={112}
+                height={111}
+                className="rounded-full"
+            />
+        </div>
     )
 }

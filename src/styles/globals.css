@@ -4,7 +4,7 @@
 
 :root {
   /* LIGHT */
-  --color-bg: 255 255 255;              /* #FFFFFF */
+  --color-bg: 0 0 0;              /* #000000 */
   --color-text: 0 0 0;                  /* #000000 */
 
   --color-stroke: 0 0 0 / 0.5;          /* 50% */
@@ -15,7 +15,7 @@
 
 .dark {
   /* DARK */
-  --color-bg: 0 0 0;                    /* #000000 */
+  --color-bg: 255 255 255;               /* #FFFFFF */
   --color-text: 255 255 255;            /* #FFFFFF */
 
   --color-stroke: 255 255 255 / 0.5;    /* 50% */
