@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  /* LIGHT */
+  --color-bg: 255 255 255;              /* #FFFFFF */
+  --color-text: 0 0 0;                  /* #000000 */
+
+  --color-stroke: 0 0 0 / 0.5;          /* 50% */
+  --color-surface: 0 0 0 / 0.05;        /* 5% */
+  --color-surface-hover: 0 0 0 / 0.02;  /* 2% */
+  --color-highlight: 0 0 0 / 0.10;      /* 10% */
+}
+
+.dark {
+  /* DARK */
+  --color-bg: 0 0 0;                    /* #000000 */
+  --color-text: 255 255 255;            /* #FFFFFF */
+
+  --color-stroke: 255 255 255 / 0.5;    /* 50% */
+  --color-surface: 255 255 255 / 0.10;  /* 10% */
+  --color-surface-hover: 255 255 255 / 0.05; /* 5% */
+  --color-highlight: 255 255 255 / 0.20;      /* 20% */
+}
