@@ -1,5 +1,6 @@
 import { Avatar } from "@/components/avatar";
 import { LinksList } from "@/components/links-list/links-list";
+import { SocialList } from "@/components/social-list";
 import { SwitchTheme } from "@/components/switch-theme";
 import { createClient } from "@/prismicio";
 
@@ -14,6 +15,15 @@ export default async function Home() {
       url: link.url ?? "",
     }))
     .filter((link) => link.label && link.url)
+    
+  console.log(settings.data.socials)
+
+  const socials = (settings.data.socials || [])
+    .map((social) => ({
+      plataform: social.plataform ?? "",
+      url: social.url ?? "",
+    }))
+    .filter((social) => social.plataform && social.url)
 
 
   return (
@@ -41,7 +51,9 @@ export default async function Home() {
 
       {/* redes socias icones */}
       <div>
-
+        <SocialList
+          socials={socials}
+        />
       </div>
 
       {/* rodape com texto */}
