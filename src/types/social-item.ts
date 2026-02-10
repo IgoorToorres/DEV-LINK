@@ -1,4 +1,4 @@
 export type SocialItem = {
-    plataform: 'instagram' | 'github' | 'linkedin';
+    plataform: string;
     url: string;  
 }
