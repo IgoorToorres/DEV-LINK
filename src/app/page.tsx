@@ -2,8 +2,8 @@ import { LinksPage } from "@/templates/links-page";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'NextLinks',
-  description: 'Site do desafio da rocketSeat feito por Igor Torres',
+  title: 'NextLinks Desafio RocketSeat',
+  description: 'Site do desafio da rocketSeat feito por Igor Torres do curso de Next-js',
   robots: 'index, follow',
   openGraph: {
     title: 'NextLinks',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: 'https://dev-link-two-sandy.vercel.app/thumbnail.png',
-        width: 800,
+        width: 600,
         height: 600,
         alt: 'NextLinks'
       }
