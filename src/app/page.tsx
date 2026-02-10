@@ -18,7 +18,7 @@ export const metadata: Metadata = {
       {
         url: 'https://dev-link-two-sandy.vercel.app/thumbnail.png',
         width: 600,
-        height: 600,
+        height: 400,
         alt: 'NextLinks'
       }
     ]
