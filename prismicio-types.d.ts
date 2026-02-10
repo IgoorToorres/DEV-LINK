@@ -86,12 +86,12 @@ export interface SiteSettingsDocumentDataLinksItem {
   /**
    * Url field in *site_settings → Links*
    *
-   * - **Field Type**: Link
+   * - **Field Type**: Text
    * - **Placeholder**: *None*
    * - **API ID Path**: site_settings.links[].url
-   * - **Documentation**: https://prismic.io/docs/fields/link
+   * - **Documentation**: https://prismic.io/docs/fields/text
    */
-  url: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
+  url: prismic.KeyTextField;
 }
 
 /**
@@ -111,12 +111,12 @@ export interface SiteSettingsDocumentDataSocialsItem {
   /**
    * Url field in *site_settings → Socials*
    *
-   * - **Field Type**: Link
+   * - **Field Type**: Text
    * - **Placeholder**: *None*
    * - **API ID Path**: site_settings.socials[].url
-   * - **Documentation**: https://prismic.io/docs/fields/link
+   * - **Documentation**: https://prismic.io/docs/fields/text
    */
-  url: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
+  url: prismic.KeyTextField;
 }
 
 /**

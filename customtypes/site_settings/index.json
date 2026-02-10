@@ -20,14 +20,10 @@
               }
             },
             "url": {
-              "type": "Link",
+              "type": "Text",
               "config": {
                 "label": "Url",
-                "placeholder": "",
-                "select": null,
-                "allowTargetBlank": true,
-                "allowText": true,
-                "repeat": false
+                "placeholder": ""
               }
             }
           }
@@ -48,14 +44,10 @@
               }
             },
             "url": {
-              "type": "Link",
+              "type": "Text",
               "config": {
                 "label": "Url",
-                "placeholder": "",
-                "select": null,
-                "allowTargetBlank": true,
-                "allowText": true,
-                "repeat": false
+                "placeholder": ""
               }
             }
           }

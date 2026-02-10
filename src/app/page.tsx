@@ -1,8 +1,21 @@
 import { Avatar } from "@/components/avatar";
 import { LinksList } from "@/components/links-list/links-list";
 import { SwitchTheme } from "@/components/switch-theme";
+import { createClient } from "@/prismicio";
 
-export default function Home() {
+export default async function Home() {
+
+  const client = createClient();
+  const settings = await client.getSingle('site_settings')
+
+  const links = (settings.data.links || [])
+    .map((link) => ({
+      label: link.label ?? "",
+      url: link.url ?? "",
+    }))
+    .filter((link) => link.label && link.url)
+
+
   return (
     <div className="flex flex-col justify-center items-center ">
       <div>
@@ -23,7 +36,7 @@ export default function Home() {
 
       {/* links */}
       <div>
-        <LinksList />
+        <LinksList links={links} />
       </div>
 
       {/* redes socias icones */}
