@@ -1,9 +1,10 @@
 import { Avatar } from "@/components/avatar";
+import { LinksList } from "@/components/links-list/links-list";
 import { SwitchTheme } from "@/components/switch-theme";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center ">
       <div>
 
         {/* foto e nome */}
@@ -22,7 +23,7 @@ export default function Home() {
 
       {/* links */}
       <div>
-
+        <LinksList />
       </div>
 
       {/* redes socias icones */}
